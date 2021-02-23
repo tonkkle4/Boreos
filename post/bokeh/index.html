@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bokeh / Differences in lens aberrations and aperture shape cause very different bokeh effects. - Boreos</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="I&amp;#039;m sure most of you have heard of the term bokeh.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Boreos" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Boreos</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+	
+    <script data-cfasync="false">
+    var _avp = _avp || [];
+    (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    
+	
+	    
+    <script>
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+    _avp.push({ alias: '/', type: 'window', zid: 23, pid: 8697 });
+    }
+    </script>
+    
+	
+<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//blissfuldes.com/41/6c/2e/416c2e838ffd0ebdc5c06cfa83cc5244.js'></script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Bokeh / Differences in lens aberrations and aperture shape cause very different bokeh effects.</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+<section>
+    <aside>
+        <a href="https://images.pexels.com/photos/567985/pexels-photo-567985.jpeg?cs=srgb&amp;dl=pexels-kat-jayne-567985.jpg&amp;fm=jpg"><img alt="Bokeh Fotografie Kostenloses Stock Foto We do branding, design and content that moves at the speed of inspiration. pexels" src="https://images.pexels.com/photos/567985/pexels-photo-567985.jpeg?cs=srgb&amp;dl=pexels-kat-jayne-567985.jpg&amp;fm=jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcjeWak-9zQ9NhGjq8-F4r4CRLZ-E17Get4A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>7360x4912 - From japanese 暈け (boke, blur), the nominalized form of 暈ける (bokeru, to blur (intransitive)). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 7360x4912</li> 
+    <mark>Bokeh Fotografie Kostenloses Stock Foto </mark> The reason why it is so popular, is because bokeh makes photographs visually appealing, forcing us to focus our attention.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://www.publicdomainpictures.net/pictures/170000/velka/bokeh-background-1463395170uoa.jpg"><img alt="Free Bokeh Backgrounds Peatix The quality of bokeh is largely dependent on the construction of the lens. peatix" src="http://www.publicdomainpictures.net/pictures/170000/velka/bokeh-background-1463395170uoa.jpg" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/ErFzULUVpW3wA4J2fNnlIPOlUqn_wjmtc9EagsQXYjhadP_XzhYGG0Ss9tSvEKsxC4eM7hVWfAQNt3M7HNavhcL2jnGRSw8MTaHgqMzV7iMk34pZiQlkAVfIHVVYMoxjf9t8O3rGLBNxq10eE-hVKdnj8IY';"></a>
+		
+		<p style="text-align: center;"><b>1920x1280 - The bokeh effect is simply an extreme shallow depth of field. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1920x1280</li> 
+    <mark>Free Bokeh Backgrounds Peatix </mark> Free bokeh stock video footage licensed under creative commons, open source, and more!
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://files.123freevectors.com/wp-content/original/145819-brown-and-white-bokeh-lights-background-graphic.jpg"><img alt="Free Brown And White Bokeh Lights Background Graphic We do branding, design and content that moves at the speed of inspiration. 123freevectors" src="https://files.123freevectors.com/wp-content/original/145819-brown-and-white-bokeh-lights-background-graphic.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQ3ub8hgHeFwamyMoJJkoLCVzqAQy9y1eVw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>8000x4500 - Temelde bokeh out of focus&#039;un kalitesi (arka plandaki objelerin tamamen kaybolması) veya kamera lensi tarafından verilen imajın bulanık tarafıdır. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 8000x4500</li> 
+    <mark>Free Brown And White Bokeh Lights Background Graphic </mark> Bokeh bokeh photo brings outstanding contemporary photography to the foreground with feature articles and a comprehensive listing of calls and competitions.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://static.vecteezy.com/ti/fotos-kostenlos/p1/1272136-regenbogen-bokeh-hintergrund-kostenlos-foto.jpg"><img alt="Regenbogen Bokeh Hintergrund Stock Foto Free bokeh stock video footage licensed under creative commons, open source, and more! https de vecteezy com foto 1272136 regenbogen bokeh hintergrund" src="https://static.vecteezy.com/ti/fotos-kostenlos/p1/1272136-regenbogen-bokeh-hintergrund-kostenlos-foto.jpg" width="100%" onerror="this.onerror=null;this.src='1';"></a>
+		
+		<p style="text-align: center;"><b>1742x980 - Basically it is referring to the aesthetic quality of the blur produced from a shot with. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1742x980</li> 
+    <mark>Regenbogen Bokeh Hintergrund Stock Foto </mark> Basically it is referring to the aesthetic quality of the blur produced from a shot with.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/c/c7/Bokeh_balls.jpg"><img alt="File Bokeh Balls Jpg Wikimedia Commons ♡ she/her ♡ lds artist &amp; designer :3 comms: file bokeh balls jpg wikimedia commons" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Bokeh_balls.jpg" width="100%" onerror="this.onerror=null;this.src='- Wikimedia Commons';"></a>
+		
+		<p style="text-align: center;"><b>3872x2592 - The bokeh effect is simply an extreme shallow depth of field. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 3872x2592</li> 
+    <mark>File Bokeh Balls Jpg Wikimedia Commons </mark> When holoviews outputs bokeh plots it creates and manipulates bokeh models in the background.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.pinimg.com/originals/92/b2/a2/92b2a253c002d5c974e6cba596f6e2cc.jpg"><img alt="Bokeh Lights For Yearbook Cover Blue Bokeh Bokeh Wallpaper Bokeh ♡ she/her ♡ lds artist &amp; designer :3 comms: bokeh lights for yearbook cover blue" src="https://i.pinimg.com/originals/92/b2/a2/92b2a253c002d5c974e6cba596f6e2cc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSlLOSsHEWT4SXZ8VQn0k9FRb-PtD7-EnUrg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1680x1050 - The quality of bokeh is largely dependent on the construction of the lens. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1680x1050</li> 
+    <mark>Bokeh Lights For Yearbook Cover Blue Bokeh Bokeh Wallpaper Bokeh </mark> We do branding, design and content that moves at the speed of inspiration.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://flyingmeat.com/acorn/docs/bokeh_effect0.png"><img alt="Acorn Bokeh Effect I&#039;m sure most of you have heard of the term bokeh. acorn bokeh effect" src="https://flyingmeat.com/acorn/docs/bokeh_effect0.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZUuTn-OI2R57kYOkZQ9afKI4wGZ_osZ-41A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1000x624 - The bokeh effect is simply an extreme shallow depth of field. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1000x624</li> 
+    <mark>Acorn Bokeh Effect </mark> Bokeh is a creative studio driven by the conviction that properly executed storytelling through design and visual media creates.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://image.freepik.com/vektoren-kostenlos/bokeh-hintergrund_52683-36106.jpg"><img alt="Bokeh Hintergrund Kostenlose Vektor Bokeh is a library for interactive visualization (including streaming or large datasets) that targets modern web browsers for presentation, and high level languages such as python, scala, and r for use. bokeh hintergrund kostenlose vektor" src="https://image.freepik.com/vektoren-kostenlos/bokeh-hintergrund_52683-36106.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkN4jTSe8mjB3KtZkdhNhNgJq6udLYGfP3IQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>626x417 - Bokeh is a creative agency based in san francisco, new york city, and madrid. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 626x417</li> 
+    <mark>Bokeh Hintergrund Kostenlose Vektor </mark> 9,321 best bokeh free video clip downloads from the videezy community.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://brushlovers.s3.amazonaws.com/images/items/f7e5ec49819dc776ad97e9881948773840712d74/bokeh-ps-brushes-free-pack-o.jpg?v=5"><img alt="Bokeh Ps Brushes Free Pack Abstract Photoshop Brushes Brushlovers Com We are a creative strategy design digital partner for brands ready to move at the speed of inspiration. bokeh ps brushes free pack abstract" src="https://brushlovers.s3.amazonaws.com/images/items/f7e5ec49819dc776ad97e9881948773840712d74/bokeh-ps-brushes-free-pack-o.jpg?v=5" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6s96xyEdT8sZBCa_LP1tMpPUC8eiF6bwhdw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x1200 - 9,321 best bokeh free video clip downloads from the videezy community. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x1200</li> 
+    <mark>Bokeh Ps Brushes Free Pack Abstract Photoshop Brushes Brushlovers Com </mark> 284,344 bokeh stock video clips in 4k and hd for creative projects.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.getolympus.com/media/wysiwyg/cms_pages/holidaybokeh/bokehcomparison.jpg"><img alt="How To Take Bokeh Photos 4 Easy Highly Effective Tips Olympus Bokeh is a python interactive visualization library that targets modern web browsers for presentation. how to take bokeh photos 4 easy" src="https://www.getolympus.com/media/wysiwyg/cms_pages/holidaybokeh/bokehcomparison.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYub_H-K_GpsmiF0fxU38IgU8KvmYKn7en_w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1000x527 - See more ideas about bokeh, bokeh photography, bokeh images. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1000x527</li> 
+    <mark>How To Take Bokeh Photos 4 Easy Highly Effective Tips Olympus </mark> Free bokeh stock video footage licensed under creative commons, open source, and more!
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://d3rf6j5nx5r04a.cloudfront.net/2VRbMwgu1837yZ16yDXGBTZvXzc=/2000x1000/blog/2/7/3/27300b3113954cfbafc6ac6ec1e3e593.jpg"><img alt="What Is Bokeh Artfinder Bokeh, also known as boke is one of the most popular subjects in photography. what is bokeh artfinder" src="https://d3rf6j5nx5r04a.cloudfront.net/2VRbMwgu1837yZ16yDXGBTZvXzc=/2000x1000/blog/2/7/3/27300b3113954cfbafc6ac6ec1e3e593.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnC7kgB6erIVWTNVd5brPY1tswX90sm5zoA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2000x1000 - The quality of bokeh is largely dependent on the construction of the lens. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2000x1000</li> 
+    <mark>What Is Bokeh Artfinder </mark> Bokeh is a creative agency based in san francisco, new york city, and madrid.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.publicdomainpictures.net/pictures/310000/velka/bokeh-background-of-lights-1574819394MZn.jpg"><img alt="Bokeh Hintergrund Der Lichter Kostenloses Stock Bild Public Domain Pictures Bokeh is a creative studio driven by the conviction that properly executed storytelling through design and visual media creates. bokeh hintergrund der lichter" src="https://www.publicdomainpictures.net/pictures/310000/velka/bokeh-background-of-lights-1574819394MZn.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdf0VAkeX_4TqGnrvfxx7z0yuTgy-LjVGQgw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1920x1281 - We are a creative strategy design digital partner for brands ready to move at the speed of inspiration. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1920x1281</li> 
+    <mark>Bokeh Hintergrund Der Lichter Kostenloses Stock Bild Public Domain Pictures </mark> #umi_bokeh ♡ level 16 ♡ switch friend code:
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.stack.imgur.com/YhTmi.jpg"><img alt="How To Create Bokeh In Three Js Or Any Way To Create Bokeh Programmatically Stack Overflow Bokeh is a library for interactive visualization (including streaming or large datasets) that targets modern web browsers for presentation, and high level languages such as python, scala, and r for use. how to create bokeh in three js or any" src="https://i.stack.imgur.com/YhTmi.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2W4ytMzJpH9LCa-biNo4GTNqi2O1qIYB8zg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>700x1050 - In this tutorial, i&#039;m going to show you how to create bokeh photography in a really easy way. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 700x1050</li> 
+    <mark>How To Create Bokeh In Three Js Or Any Way To Create Bokeh Programmatically Stack Overflow </mark> We are a creative strategy design digital partner for brands ready to move at the speed of inspiration.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://lernen.zoner.de/wp-content/uploads/2019/12/01_regenschirm.jpg?fidl=2019-06-mag-de"><img alt="Wie Erreicht Man Ein Ausgepragtes Bokeh Panorama Hilft Ihnen Dabei Fotografieren Lernen Von Zoner Photo Studio From japanese 暈け (boke, blur), the nominalized form of 暈ける (bokeru, to blur (intransitive)). fotografieren lernen von zoner photo studio" src="https://lernen.zoner.de/wp-content/uploads/2019/12/01_regenschirm.jpg?fidl=2019-06-mag-de" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgYUgMds9sFIBneIiISNVysy760Y9Z7hqKAw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2048x1152 - Unduh gratis hd atau 4k gunakan semua video secara gratis untuk proyek anda. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2048x1152</li> 
+    <mark>Wie Erreicht Man Ein Ausgepragtes Bokeh Panorama Hilft Ihnen Dabei Fotografieren Lernen Von Zoner Photo Studio </mark> Differences in lens aberrations and aperture shape cause very different bokeh effects.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://photo-trend.de/wp-content/uploads/2019/09/bokeh-titel.jpg"><img alt="What Is Bokeh Photo Trend Where And How To Use Bokeh Unduh gratis hd atau 4k gunakan semua video secara gratis untuk proyek anda. what is bokeh photo trend where and" src="https://photo-trend.de/wp-content/uploads/2019/09/bokeh-titel.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtWfCRW_0ZnwxRjIuIXD3_d5vMH4_kBbP2Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>840x480 - Bokeh is a creative studio driven by the conviction that properly executed storytelling through design and visual media creates. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 840x480</li> 
+    <mark>What Is Bokeh Photo Trend Where And How To Use Bokeh </mark> If at any time you need access to the underlying plotly representation of an.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://static.vecteezy.com/system/resources/previews/000/833/799/original/blue-and-gold-bokeh-lights-background-vector.jpg"><img alt="Blue And Gold Bokeh Lights Background Download Free Vectors Clipart Graphics Vector Art #umi_bokeh ♡ level 16 ♡ switch friend code: vecteezy" src="https://static.vecteezy.com/system/resources/previews/000/833/799/original/blue-and-gold-bokeh-lights-background-vector.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA4bUIj97tygEDWeRpC6hTqn-a9RvtH2tF_w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>5003x3546 - Bokeh, also known as boke is one of the most popular subjects in photography. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 5003x3546</li> 
+    <mark>Blue And Gold Bokeh Lights Background Download Free Vectors Clipart Graphics Vector Art </mark> Bokeh bokeh photo brings outstanding contemporary photography to the foreground with feature articles and a comprehensive listing of calls and competitions.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://assets.community.lomography.com/90/08055135c1f3f5fddb79e1c8f392849d278224/704x457x2.jpg?auth=20961803f8dfc77fb852189d54abadbb3119afe0"><img alt="Kunstlerisches Bokeh Lomography In this tutorial, i&#039;m going to show you how to create bokeh photography in a really easy way. kunstlerisches bokeh lomography" src="https://assets.community.lomography.com/90/08055135c1f3f5fddb79e1c8f392849d278224/704x457x2.jpg?auth=20961803f8dfc77fb852189d54abadbb3119afe0" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZjH4WY4t-DtjKLUAUVgaKvjwv7h0f8F8ztw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>992x643 - From japanese 暈け (boke, blur), the nominalized form of 暈ける (bokeru, to blur (intransitive)). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 992x643</li> 
+    <mark>Kunstlerisches Bokeh Lomography </mark> The reason why it is so popular, is because bokeh makes photographs visually appealing, forcing us to focus our attention.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn-7.nikon-cdn.com/Images/Learn-Explore/Photography-Techniques/2012/Bokeh-for-Beginners/Media/Lindsay-Silverman-Bokeh-lights.jpg"><img alt="Labelled Scatter Plot With Bokeh Just Another Developer Bokeh is an interactive visualization library for modern web browsers. labelled scatter plot with bokeh just" src="https://cdn-7.nikon-cdn.com/Images/Learn-Explore/Photography-Techniques/2012/Bokeh-for-Beginners/Media/Lindsay-Silverman-Bokeh-lights.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOHETZ1yAneD1kf_LA5oXqnf_W-6C2g3A-LQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>977x650 - The quality of bokeh is largely dependent on the construction of the lens. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 977x650</li> 
+    <mark>Labelled Scatter Plot With Bokeh Just Another Developer </mark> Temelde bokeh out of focus&#039;un kalitesi (arka plandaki objelerin tamamen kaybolması) veya kamera lensi tarafından verilen imajın bulanık tarafıdır.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.fullstackpython.com/img/logos/bokeh.jpg"><img alt="Bokeh Full Stack Python The reason why it is so popular, is because bokeh makes photographs visually appealing, forcing us to focus our attention. bokeh full stack python" src="https://www.fullstackpython.com/img/logos/bokeh.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Noox-860fKpBC0I6JOYJz7l55WgFyzzCPg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>948x307 - The quality of bokeh is largely dependent on the construction of the lens. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 948x307</li> 
+    <mark>Bokeh Full Stack Python </mark> Free for commercial use no attribution required high quality images.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://img.glyphs.co/img?src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL2Jsb2ctaW1hZ2VzL0NyZWF0ZS1hLURhenpsaW5nLUJva2VoLUVmZmVjdC1pbi0xNS1FYXN5LVN0ZXBzL3Bvc3QtaGVhZGVyLmpwZz9tdGltZT0yMDE4MTAwNzEwMDg0Mg&amp;q=85&amp;enlarge=true&amp;h=215&amp;w=570"><img alt="Create A Dazzling Bokeh Effect In 15 Easy Steps Medialoot ♡ she/her ♡ lds artist &amp; designer :3 comms: dazzling bokeh effect in 15 easy steps" src="https://img.glyphs.co/img?src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL2Jsb2ctaW1hZ2VzL0NyZWF0ZS1hLURhenpsaW5nLUJva2VoLUVmZmVjdC1pbi0xNS1FYXN5LVN0ZXBzL3Bvc3QtaGVhZGVyLmpwZz9tdGltZT0yMDE4MTAwNzEwMDg0Mg&amp;q=85&amp;enlarge=true&amp;h=215&amp;w=570" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJEXUz6BgtNl0k5cLeUgMUYxZohzpnw6IfZw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>570x215 - If at any time you need access to the underlying plotly representation of an. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 570x215</li> 
+    <mark>Create A Dazzling Bokeh Effect In 15 Easy Steps Medialoot </mark> Sign up for free today!
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://boreos.vercel.app/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/19-feb-shiv-jayanti-quotes-in-marathi/">19 Feb Shiv Jayanti Quotes In Marathi : See more of मराठी सुविचार संग्रह / marathi quotes collection on facebook.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/airfare-from-canberra-to-melbourne/">Airfare From Canberra To Melbourne / Compare prices on flight routes to top destinations worldwide with opodo and book the cheapest deal!</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/ana-cheri-engagement-ring/">Ana Cheri Engagement Ring - Diamonds are precious for many reasons—they are rare, billions of years old, and one of the hardest materials what is a pavé engagement ring?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/chloe-moriondo-la-vie-en-rose-ukulele-chords/">Chloe Moriondo La Vie En Rose Ukulele Chords - This arrangement for the song is the author&amp;#039;s own work and represents their interpretation of the song.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/daniella-perkins-age/">Daniella Perkins Age / Daniella perkins&amp;#039;s age is 20.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/gujarat-samachar-newspaper-today-rajkot/">Gujarat Samachar Newspaper Today Rajkot / Gujarat samachar has editions from ahmedabad, vadodara (baroda), surat, rajkot, bhavnagar, mumbai and new york.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/lagu-thomas-arya-mp3/">Lagu Thomas Arya Mp3 / Music lagu bunda thomas arya 100% free!</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/lirik-lagu-ahmad-ya-habibi-az-zahir/">Lirik Lagu Ahmad Ya Habibi Az Zahir : Ya habib, ya imamarrusli, ya laqolbin | az zahir feat syubband di ponpes az zahir.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/suresh-raina-family-details/">Suresh Raina Family Details : Suresh raina was born on 27th november 1986 into a kashmiri pandit family in muradnagar, ghaziabad disrict, uttar pradesh state.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/suresh-raina-family-members/">Suresh Raina Family Members - Raina made a significant contribution, enabling his team win a lot of matches and tournaments.</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Boreos.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21862896-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21862896-2');
+</script>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
